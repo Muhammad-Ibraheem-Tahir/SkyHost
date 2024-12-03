@@ -2080,41 +2080,47 @@ body {
   margin: 10px 0;
 }
 
-.p {
+.section-heading p {
   color: #555;
 }
 
-/* Image Container */
-.owl-features .item {
+/* Card Container */
+.card {
   position: relative;
-  overflow: hidden;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
 }
 
-/* Images with 3D Effects */
+/* 3D Effect on Hover */
+.card:hover {
+  transform: scale(1.1) rotateY(10deg) rotateX(5deg);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Styling */
 .project-image {
   width: 100%;
   height: auto;
-  transform-origin: center;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
   border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-/* 3D Hover Animation */
-.project-image:hover {
-  transform: scale(1.1) rotateY(10deg);
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
-}
-
+/* Content Styling */
 .down-content {
   text-align: center;
-  padding: 10px;
 }
 
 .down-content h4 {
-  margin-top: 10px;
+  font-size: 18px;
   color: #333;
+  margin-top: 10px;
   font-weight: bold;
 }
 
